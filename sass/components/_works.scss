@@ -1,0 +1,32 @@
+@media screen and (max-width:1599px){
+  .works{
+      display: none;
+  }
+}
+.works__title {
+  margin-bottom: 50px;
+}
+
+.works__list-item {
+  position: relative;
+ 
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.works__desc {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428;
+  text-align: center;
+  color: $white-color;
+  background: var(--bg-works-desk);
+  padding: 27px 10px;
+  text-transform: uppercase;
+  overflow: auto;
+}

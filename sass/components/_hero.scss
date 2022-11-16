@@ -1,0 +1,52 @@
+.hero {
+  background-color: $bg-hero;
+}
+
+.hero__conteiner {
+  max-width: 480px;
+  background-image: url(../images/overlays.webp), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: $white-color;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+@media screen and (min-width:1600px){
+  .hero__conteiner {
+      max-width: 1600px;
+  }
+}
+
+.hero__title {
+  max-width: 696px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media screen and (min-width:1600px) {
+  .hero__title {
+      margin: 0 auto 30px auto;
+  }
+}
+
+.hero__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  background-color: $bg-accent;
+  border-radius: 4px;
+  border-color: $border_color_1;
+  border: none;
+  cursor: pointer;
+}
