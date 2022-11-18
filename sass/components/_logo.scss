@@ -1,5 +1,6 @@
 .logo {
   display: flex;
+  // display:block;
   font-family: $font_family_2;
   font-weight: 700;
   font-size: 26px;
@@ -8,4 +9,13 @@
   color: $c-accent;
   text-decoration: none;
   outline: transparent;
+    
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+  
+      font-size: 24px;
+      line-height: 1.6666;
+  }
 }
+
+

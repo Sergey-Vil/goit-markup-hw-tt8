@@ -20,7 +20,7 @@
   //   margin-right: 30px;
   // }
 }
-@media screen and (min-width:1600px) {
+@media screen and (min-width:1200px) {
   .partner__item {
     &:not(:last-child) {
         margin-right: 30px;
@@ -52,7 +52,7 @@
     outline: transparent;
   }
 }
-@media screen and (min-width:1600px) {
+@media screen and (min-width:1200px) {
   .partner__link {
     width: 170px;
     height: 92px;
