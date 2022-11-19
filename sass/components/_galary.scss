@@ -42,9 +42,14 @@
 }
 
 .galary__button {
+
   padding: 6px 22px;
   border-color: $border_color_1;
   border-radius: 4px;
+  @media screen and (min-width:768px) {
+      justify-content: start;
+    
+  }
 }
 
 .galary__button--general {
@@ -55,20 +60,27 @@
   padding-left: 0;
   flex-wrap: wrap;
   list-style: none;
+  gap: 30px;
 }
 
 .galary__item {
   max-width: 370px;
   border: 1px solid #eeeeee;
-
-  &:not(:nth-child(3n+3)) {
-    margin-right: 30px;
+  @media screen and (max-width:1199px) {
+    width: calc((100% - 30px)/2);
+  }
+  @media screen and (max-width:767px) {
+    width: 100%;
   }
 
+  // &:not(:nth-child(3n+3)) {
+  //   margin-right: 30px;
+  // }
 
-  &:not(:nth-child(n+7)) {
-    margin-bottom: 30px;
-  }
+
+  // &:not(:nth-child(n+7)) {
+  //   margin-bottom: 30px;
+  // }
 
 }
 

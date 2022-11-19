@@ -7,6 +7,9 @@
   flex-wrap: wrap;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (max-width:768px){
+      gap: 60px;
+  }
   @media screen and (min-width:768px) and (max-width:1199px) {
     justify-content: space-between;
     padding: 60px 89px 60px 76px;
@@ -14,12 +17,7 @@
     }
 }
 
-.form{
-  @media screen and (min-width:768px) and (max-width:1199px) {
-      flex-direction: column;
-      max-width: 318px;
-    }
-}
+
 
 @media screen and (max-width:767px){
   .footer__conteiner,.form  {
@@ -119,6 +117,7 @@
 .footer-input {
   padding-top: 12px;
   @media screen and (max-width:767px) {
+
       width: 100%;
     }
   @media screen and (min-width:768px) and (max-width:1199px) {
@@ -134,14 +133,16 @@
 
  .form {
   display: flex;
-
-    gap: 12px;
+  gap: 12px;
+  @media screen and (min-width:768px) and (max-width:1199px) {
+      flex-direction: column;
+      max-width: 318px;
+    }
+  @media screen and (max-width:1999px) {
+    gap: 20px;
+  }
  }
-// @media screen and (min-width:1600px) {
-//   .form{
-    
-//   }
-// }
+
 @media screen and (max-width:1199px){
   .label__email{
     width: 100%;

@@ -4,15 +4,20 @@ display: flex;
   flex-wrap: wrap;
   padding-left: 0;
   list-style: none;
-}
+
 @media screen and (min-width:768px) {
-  .list {
+
     display: flex;
   }
-}
+  @media screen and (max-width:767px) {
+    justify-content: start;
+
+  }
+
 @media screen and (min-width:1200px) {
   .list {
       display: flex;
   }
+}
 }
 
