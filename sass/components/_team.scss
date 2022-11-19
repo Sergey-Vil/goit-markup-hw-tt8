@@ -5,13 +5,14 @@
 .team__title {
   margin-bottom: 50px;
 }
+ .team__list {
+    gap: 30px;
+ }
+
 @media screen and (max-width:767px) {
   .team__list {
     display: flex;
     flex-direction: column;
-
-    
-      gap: 30px;
   }
 }
 
@@ -23,20 +24,21 @@
   max-height: auto;
   
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width:768px) and (max-width:1199px){
   .team__item {
-  &:not(:last-child) {
-      margin-right: 30px;
+   
+    width: calc(50% - 15px);
+    }
+  .team img {
+      width: 354px;
+      height: 374px;
     }
   }
-}
+
 @media screen and (max-width:767px) {
   .team{
     img{
       width: auto;
-
-
-     
     }
   }
 }
