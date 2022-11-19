@@ -991,15 +991,22 @@ img {
             align-items: center;
     max-width: 480px;
   }
-  .footer__address {
-    width: 100%;
-    text-align: center;
-  }
 }
 .footer__address {
   display: block;
   width: 100%;
   width: 231px;
+}
+@media screen and (max-width: 767px) {
+  .footer__address {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__address {
+    text-align: center;
+  }
 }
 
 .footer__logo {

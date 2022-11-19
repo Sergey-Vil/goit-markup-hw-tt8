@@ -27,10 +27,7 @@
     align-items: center;
     max-width: 480px;
   }
-  .footer__address{
-    width:100%;   
-    text-align: center;
-  }
+
 }
 
 
@@ -38,6 +35,13 @@
   display: block;
   width: 100%;
   width: 231px;
+  @media screen and (max-width:767px) {
+        width: 100%;
+        text-align: center;
+      }
+  @media screen and (min-width:768px) and (max-width:1199px) {
+      text-align: center;
+  }
 }
 
 .footer__logo {
