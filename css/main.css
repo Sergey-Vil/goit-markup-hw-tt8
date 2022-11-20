@@ -615,8 +615,7 @@ img {
 }
 
 .hero__conteiner {
-  max-width: 480px;
-  background-image: url(../images/overlays.webp), url(../images/hero.jpg);
+  background-image: url(../images/overlays.webp), url(../images/hero-dt.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -624,14 +623,30 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .hero__conteiner {
-    max-width: 1600px;
+    background-image: url(../images/overlays.webp), url(../images/hero-tablet.jpg);
+    max-width: 768px;
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
+@media screen and (max-width: 767px) {
+  .hero__conteiner {
+    background-image: url(../images/overlays.webp), url(../images/hero-mobile.jpg);
+    max-width: 480px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+.hero__conteiner {
+  max-width: 1600px;
+}
+
 .hero__title {
   max-width: 696px;
+  margin: 0 auto 30px auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -639,12 +654,14 @@ img {
   text-align: center;
   text-transform: uppercase;
 }
-
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .hero__title {
-    margin: 0 auto 30px auto;
+    max-width: 360px;
+    font-size: 26px;
+    line-height: 1.6153;
   }
 }
+
 .hero__button {
   display: block;
   margin-left: auto;
@@ -660,6 +677,11 @@ img {
   border-color: transparent;
   border: none;
   cursor: pointer;
+}
+@media screen and (max-width: 1199px) {
+  .hero__button {
+    padding: 10px 24px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1207,9 +1229,21 @@ img {
   display: none;
 }
 
-.galary-button__item:not(:last-child) {
-  margin-right: 8px;
+.galary-button {
+  gap: 8px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 1199px) {
+  .galary-button {
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .galary-button {
+    gap: 15px 8px;
+    margin-bottom: 40px;
+  }
 }
 
 .button {
@@ -1393,6 +1427,18 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .modal {
+    width: auto;
+    height: auto;
+  }
+}
 
 .modal__button--close {
   position: absolute;
@@ -1424,14 +1470,25 @@ img {
   fill: var(--c-accent);
 }
 
+.modal-form {
+  width: auto;
+}
+
 .modal-form__title {
+  width: auto;
   text-align: center;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   margin-bottom: 12px;
   letter-spacing: 0.03em;
   color: var(--c-primery);
+}
+@media screen and (max-width: 1199px) {
+  .modal-form__title {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 
 .form-row-input {
@@ -1482,6 +1539,28 @@ img {
   line-height: 1.1666;
   letter-spacing: 0.01em;
   color: var(--c-placeholder);
+}
+@media screen and (max-width: 1199px) {
+  .modal-form__text::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 1.1428;
+  }
+  .modal-form__text::-moz-placeholder {
+    font-size: 14px;
+    line-height: 1.1428;
+  }
+  .modal-form__text:-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 1.1428;
+  }
+  .modal-form__text::-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 1.1428;
+  }
+  .modal-form__text::placeholder {
+    font-size: 14px;
+    line-height: 1.1428;
+  }
 }
 .modal-form__text:focus {
   border: 1px solid var(--c-accent);
@@ -1558,8 +1637,15 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 14px;
+  line-height: 1.7142;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+@media screen and (max-width: 1199px) {
+  .modal-check__label {
+    font-size: 12px;
+    line-height: 1.1666;
+  }
 }
 .modal-check__label::before {
   display: -webkit-box;
@@ -1586,6 +1672,12 @@ img {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: var(--c-accent);
+}
+@media screen and (max-width: 1199px) {
+  .modal-check__link {
+    font-size: 12px;
+    line-height: 1.1666;
+  }
 }
 
 .modal__button-send {

@@ -2,6 +2,7 @@
   position: fixed;
   width: 100%;
   height: 100%;
+
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.2);
@@ -14,6 +15,7 @@
   opacity: 0;
   pointer-events: none;
 
+
   .modal {
     transform: translate(-50%, -50%) scale(0.9);
   }
@@ -22,13 +24,25 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+width: 528px;
+ height: 581px;
   padding: 40px;
+
   background-color: $bg-section;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (max-width:1199px) {
+    width: 450px;
+    height: 609px;
+
+  }
+  @media screen and (max-width:480px) {
+    width: auto;
+    height: auto;
+
+  }
 }
+
 .modal__button--close {
   position: absolute;
   right: 8px;
@@ -53,14 +67,22 @@
     fill: var(--c-accent);
   }
 }
+.modal-form{
+  width: auto;
+}
 .modal-form__title {
+  width: auto;
   text-align: center;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   margin-bottom: 12px;
   letter-spacing: 0.03em;
   color: $c-primery;
+  @media screen and (max-width:1199px) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 .form-row-input {
   display: block;
@@ -70,7 +92,7 @@
   display: block;
   width: 100%;
   width: 100%;
-  height: 120px;
+height: 120px;
   padding: 12px 16px;
   margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -84,6 +106,10 @@
     line-height: 1.1666;
     letter-spacing: 0.01em;
     color: $c-placeholder;
+    @media screen and (max-width:1199px) {
+        font-size: 14px;
+        line-height: 1.1428;
+      }
   }
 
   &:focus {
@@ -96,6 +122,7 @@
 
 .form-row__title {
   display: block;
+ 
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.1666;
@@ -158,8 +185,14 @@
   align-items: center;
   justify-content: center;
   font-size: 14px;
+  line-height: 1.7142;
   letter-spacing: 0.03em;
   color: $title-text-color;
+  @media screen and (max-width:1199px) {
+      font-size: 12px;
+      line-height: 1.1666;
+    
+  }
 
   &::before {
     display: flex;
@@ -183,6 +216,11 @@
   line-height: 1.7142;
   text-decoration-line: underline;
   color: $c-accent;
+  @media screen and (max-width:1199px) {
+      font-size: 12px;
+      line-height: 1.1666;
+  
+    }
 }
 .modal__button-send {
   display: block;
