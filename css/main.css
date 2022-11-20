@@ -1304,7 +1304,7 @@ img {
 }
 
 .galary__item {
-  max-width: 370px;
+  width: calc((100% - 60px) / 3);
   border: 1px solid #eeeeee;
 }
 @media screen and (max-width: 1199px) {
@@ -1350,6 +1350,13 @@ img {
 .galary-card {
   position: relative;
   overflow: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+  .galary-card img {
+    width: 370px;
+    height: 294px;
+  }
 }
 
 .galary__descriotion {

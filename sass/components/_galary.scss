@@ -75,7 +75,7 @@
 }
 
 .galary__item {
-  max-width: 370px;
+  width: calc((100% - 60px)/3);
   border: 1px solid #eeeeee;
   @media screen and (max-width:1199px) {
     width: calc((100% - 30px)/2);
@@ -126,6 +126,13 @@
 .galary-card {
   position: relative;
   overflow: hidden;
+}
+.galary-card img{
+  @media screen and (min-width:1200px) {
+    width: 370px;
+    height: 294px;
+  }
+  
 }
 
 .galary__descriotion {
