@@ -625,7 +625,7 @@ img {
   padding-bottom: 200px;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .hero__conteiner {
     max-width: 1600px;
   }
@@ -640,7 +640,7 @@ img {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     margin: 0 auto 30px auto;
   }
@@ -820,11 +820,18 @@ img {
   max-width: auto;
   max-height: auto;
 }
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
     width: calc(50% - 15px);
   }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team img {
     width: 354px;
     height: 374px;
