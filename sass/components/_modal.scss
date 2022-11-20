@@ -169,7 +169,7 @@ height: 120px;
   opacity: 0;
 
   &:checked {
-    &+.modal-check__label {
+    &.modal-check__label {
       &::before {
         background-color: $bg-accent;
         background-image: url(../images/icons/Vector.svg);
@@ -180,6 +180,15 @@ height: 120px;
   }
 }
 
+.modal-check__label{
+  flex-wrap: wrap;
+  @media screen and (max-width:480px) {
+      gap: 10px;
+      text-align: center;
+  
+    }
+
+}
 .modal-check__label {
   display: flex;
   align-items: center;

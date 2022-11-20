@@ -1626,11 +1626,22 @@ img {
   position: absolute;
   opacity: 0;
 }
-.modal-check__input:checked + .modal-check__label::before {
+.modal-check__input:checked.modal-check__label::before {
   background-color: var(--bg-accent);
   background-image: url(../images/icons/Vector.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.modal-check__label {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (max-width: 480px) {
+  .modal-check__label {
+    gap: 10px;
+    text-align: center;
+  }
 }
 
 .modal-check__label {
