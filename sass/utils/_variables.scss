@@ -41,6 +41,7 @@ $border_color_2: var(--bg-accent);
   --bg-galary-desc: rgba(33, 150, 243, 0.9);
 }
 body {
+  position: relative;
   font-family: $font_family_1;
   letter-spacing: 0.03em;
   margin: 0 auto;
